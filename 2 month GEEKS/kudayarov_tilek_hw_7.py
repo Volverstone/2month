@@ -1,12 +1,7 @@
 import sqlite3
 
-def create_connect(db_name): #подключение
-    connection = None
-    try:
-        connection = sqlite3.connect(db_name)
-    except sqlite3.Error as e:
-        print(e)
-    return connection
+connection = sqlite3.connect('''hw.db''')
+
 def create_table(connection,sql): #создание таблицы
     try:
         cursor = connection.cursor()
@@ -109,7 +104,7 @@ CREATE TABLE products (
 )
 '''
 
-connect_to_db = create_connect('''hw.db''')
+connect_to_db = connection
 if connect_to_db is not None:
     print('Connection succesfully!')
     # create_table(connect_to_db, sql_to_create_products_table)
@@ -136,7 +131,7 @@ if connect_to_db is not None:
     # select_products(connect_to_db)
     # select_products_limit(connect_to_db,100)
     # select_products_limit2(connect_to_db,5 )
-    # select_products_limit3(connect_to_db)
+    select_products_limit3(connect_to_db)
 
 
     print("all right")
