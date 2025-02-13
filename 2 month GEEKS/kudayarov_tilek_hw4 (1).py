@@ -103,7 +103,7 @@ class Magic(Hero):
         # здесь будет реализация способности BOOST
         random_boost = randint(2,5)
         for hero in heroes:
-            if (hero.health > 0):
+            if hero.health > 0:
                 hero.damage = hero.damage + random_boost
         print(f"{self.name} BOOST OUR TEMMATES! ")
 
@@ -148,7 +148,6 @@ class Witcher(Hero):
                 hero.health += hero.max_health
                 self.health = 0
                 print(f"Wither has dead and reborn {hero.name}")
-                break
 
 class Hacker(Hero):
     def __init__(self, name, health, damage):

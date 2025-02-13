@@ -4,7 +4,6 @@ from decouple import config
 
 
 start_capital = int(config("START_CAPITAL"))
-random_num = int(choice(config("DIAPASONE")))
 
 
 def game(bet,number):

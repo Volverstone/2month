@@ -64,24 +64,23 @@
 #        print("number ignored")
 #        continue
 #    print("geeks", counter)
-
-numbers = range(1, 21)
-for number in numbers:
-    print(number)
-
-word = "kyrguzstan"
-for letter in word:
-    print(letter)
-
-word = "kyrguzstan"
-for letter in word:
-    if letter == "s":
-        break
-    print(letter)
-
-word = "kyrguzstan"
-for letter in word:
-    if letter in "gzs":
-        continue
-    print(letter)
-
+#
+# numbers = range(1, 21)
+# for number in numbers:
+#     print(number)
+#
+# word = "kyrguzstan"
+# for letter in word:
+#     print(letter)
+#
+# word = "kyrguzstan"
+# for letter in word:
+#     if letter == "s":
+#         break
+#     print(letter)
+#
+# word = "kyrguzstan"
+# for letter in word:
+#     if letter in "g":
+#         break
+#     print(letter)

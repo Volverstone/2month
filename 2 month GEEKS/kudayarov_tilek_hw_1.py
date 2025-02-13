@@ -45,7 +45,9 @@ print(bakytbek.introduce_myself())
 print(bakytbek.up_of_salary())
 
 
+
 def create_students():#информация об учениках
+
 
     first_st = Student("Андрей", 20, "не женат",
                        math=5,phylosophy=5, physic=5, geometry=5)

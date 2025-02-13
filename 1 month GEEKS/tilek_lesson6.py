@@ -83,3 +83,5 @@ numbers = (45,)# кортеж! там есть запятая
 # print(students)
 # print(deleted)
 #
+
+

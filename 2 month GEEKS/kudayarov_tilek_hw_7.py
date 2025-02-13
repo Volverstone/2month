@@ -1,6 +1,6 @@
 import sqlite3
 
-connection = sqlite3.connect('''hw.db''')
+connection = sqlite3.connect('''new.db''')
 
 def create_table(connection,sql): #создание таблицы
     try:
@@ -107,7 +107,7 @@ CREATE TABLE products (
 connect_to_db = connection
 if connect_to_db is not None:
     print('Connection succesfully!')
-    # create_table(connect_to_db, sql_to_create_products_table)
+    create_table(connect_to_db, sql_to_create_products_table)
     #вся цена тут за кило продукта
     # insert_products(connect_to_db, ('Tomatos_from_Kazakhstan', 90.70, 120))
     # insert_products(connect_to_db, ('Apples', 70, 80))
